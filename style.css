@@ -49,9 +49,30 @@ header.app p { margin: 2px 0 0; color: var(--muted); }
 nav.links {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 6px 18px;
   margin: 20px 0 32px;
   font-size: 15px;
+}
+
+/* While i18n.js swaps in a saved non-English language, hide the English text so it doesn't flash. */
+html.i18n-pending main { visibility: hidden; }
+
+.lang-menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+}
+
+.lang-menu select {
+  font: inherit;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 4px 8px;
 }
 
 a { color: var(--accent); text-decoration: none; }

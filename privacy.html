@@ -7,105 +7,71 @@
   <meta name="description" content="GlassTime collects no personal data. Everything stays on your Mac.">
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
+  <script src="i18n.js"></script>
 </head>
-<body>
+<body data-page="privacy">
 <main>
   <header class="app">
     <img src="icon.png" alt="">
     <div>
-      <h1>Privacy Policy</h1>
+      <h1 data-i18n="nav.privacy">Privacy Policy</h1>
       <p>GlassTime for Mac</p>
     </div>
   </header>
 
   <nav class="links">
-    <a href="#en">English</a>
-    <a href="#zh">简体中文</a>
-    <a href="./">Support · 技术支持</a>
+    <a href="./" data-i18n="nav.support">Support</a>
+    <a href="https://github.com/0xnoahzhu/glasstime-site/issues" data-i18n="nav.contact">Contact</a>
+    <label class="lang-menu"><span data-i18n="nav.language">Language</span>
+      <select id="lang" aria-label="Language"></select>
+    </label>
   </nav>
 
-  <section class="lang" id="en" lang="en">
-    <h2>Privacy Policy</h2>
-    <p class="updated">Last updated: November 24, 2026</p>
+  <section class="lang">
+    <h2 data-i18n="nav.privacy">Privacy Policy</h2>
+    <p class="updated" data-i18n="p.updated">Last updated: November 24, 2026</p>
 
-    <p>GlassTime is a world clock for macOS. It is built to work entirely on your Mac, and it does not collect any
-      information about you.</p>
+    <p data-i18n="p.intro">GlassTime is a world clock for macOS. It is built to work entirely on your Mac, and it does
+      not collect any information about you.</p>
 
-    <h3>No data collection</h3>
+    <h3 data-i18n="p.nodata.h">No data collection</h3>
     <ul>
-      <li>GlassTime does not collect, store, transmit or sell any personal information.</li>
-      <li>There are no accounts, no analytics, no advertising and no third-party SDKs.</li>
-      <li>GlassTime does not track you across apps or websites.</li>
-      <li>GlassTime makes no network connections.</li>
+      <li data-i18n="p.nodata.1">GlassTime does not collect, store, transmit or sell any personal information.</li>
+      <li data-i18n="p.nodata.2">There are no accounts, no analytics, no advertising and no third-party SDKs.</li>
+      <li data-i18n="p.nodata.3">GlassTime does not track you across apps or websites.</li>
+      <li data-i18n="p.nodata.4">GlassTime makes no network connections.</li>
     </ul>
 
-    <h3>What stays on your Mac</h3>
-    <p>Your settings — the cities you add, their working hours, the widget style and your other preferences — are
-      saved only on your Mac, inside GlassTime's own sandboxed storage. They are never sent anywhere. Deleting the app
-      removes them.</p>
+    <h3 data-i18n="p.local.h">What stays on your Mac</h3>
+    <p data-i18n="p.local.p">Your settings — the cities you add, their working hours, the widget style and your other
+      preferences — are saved only on your Mac, inside GlassTime's own sandboxed storage. They are never sent
+      anywhere. Deleting the app removes them.</p>
 
-    <h3>Permissions</h3>
-    <p>GlassTime does not ask for access to your location, contacts, files, camera, microphone or Accessibility
-      features. Keyboard shortcuts and launch at login use standard macOS features that need no extra permission.</p>
+    <h3 data-i18n="p.perm.h">Permissions</h3>
+    <p data-i18n="p.perm.p">GlassTime does not ask for access to your location, contacts, files, camera, microphone or
+      Accessibility features. Keyboard shortcuts and launch at login use standard macOS features that need no extra
+      permission.</p>
 
-    <h3>Crash reports</h3>
-    <p>If you choose to share crash data with app developers in System Settings › Privacy &amp; Security › Analytics
-      &amp; Improvements, Apple may provide anonymous crash reports for GlassTime to its developer. That sharing is
-      controlled by you and handled by Apple under
+    <h3 data-i18n="p.crash.h">Crash reports</h3>
+    <p data-i18n="p.crash.p">If you choose to share crash data with app developers in System Settings › Privacy &amp;
+      Security › Analytics &amp; Improvements, Apple may provide anonymous crash reports for GlassTime to its
+      developer. That sharing is controlled by you and handled by Apple under
       <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. The reports are used only to fix
       bugs.</p>
 
-    <h3>Children</h3>
-    <p>GlassTime collects no data from anyone, including children.</p>
+    <h3 data-i18n="p.kids.h">Children</h3>
+    <p data-i18n="p.kids.p">GlassTime collects no data from anyone, including children.</p>
 
-    <h3>Changes</h3>
-    <p>If this policy changes, the new version will be posted on this page with a new "Last updated" date.</p>
+    <h3 data-i18n="p.changes.h">Changes</h3>
+    <p data-i18n="p.changes.p">If this policy changes, the new version will be posted on this page with a new "Last
+      updated" date.</p>
 
-    <h3>Contact</h3>
-    <p>Questions about privacy? Open an issue at
+    <h3 data-i18n="p.contact.h">Contact</h3>
+    <p data-i18n="p.contact.p">Questions about privacy? Open an issue at
       <a href="https://github.com/0xnoahzhu/glasstime-site/issues">github.com/0xnoahzhu/glasstime-site/issues</a>.</p>
   </section>
 
-  <section class="lang" id="zh" lang="zh-Hans">
-    <h2>隐私政策</h2>
-    <p class="updated">最后更新：2026 年 11 月 24 日</p>
-
-    <p>GlassTime 是一款 macOS 世界时钟。它完全在你的 Mac 上运行，不收集任何关于你的信息。</p>
-
-    <h3>不收集任何数据</h3>
-    <ul>
-      <li>GlassTime 不收集、存储、传输或出售任何个人信息。</li>
-      <li>没有账号、没有统计分析、没有广告，也没有任何第三方 SDK。</li>
-      <li>GlassTime 不会跨 App 或网站追踪你。</li>
-      <li>GlassTime 不进行任何网络连接。</li>
-    </ul>
-
-    <h3>保存在你 Mac 上的内容</h3>
-    <p>你的设置——添加的城市、各城市的工作时间、小组件样式以及其他偏好——只保存在你的 Mac 上，位于 GlassTime
-      自己的沙盒存储中，不会发送到任何地方。删除 App 即会一并删除。</p>
-
-    <h3>权限</h3>
-    <p>GlassTime 不会请求访问你的位置、通讯录、文件、相机、麦克风或辅助功能。快捷键和登录时启动使用的是无需额外授权的
-      macOS 标准功能。</p>
-
-    <h3>崩溃报告</h3>
-    <p>如果你在「系统设置 › 隐私与安全性 › 分析与改进」中选择与 App 开发者共享崩溃数据，Apple 可能会把 GlassTime
-      的匿名崩溃报告提供给开发者。是否共享由你决定，并由 Apple 依照
-      <a href="https://www.apple.com.cn/legal/privacy/">Apple 隐私政策</a>处理。这些报告仅用于修复问题。</p>
-
-    <h3>儿童</h3>
-    <p>GlassTime 不收集任何人的数据，包括儿童。</p>
-
-    <h3>政策变更</h3>
-    <p>如本政策有变更，新版本会发布在本页面，并更新"最后更新"日期。</p>
-
-    <h3>联系方式</h3>
-    <p>有隐私方面的问题，请在
-      <a href="https://github.com/0xnoahzhu/glasstime-site/issues">github.com/0xnoahzhu/glasstime-site/issues</a>
-      提交 Issue。</p>
-  </section>
-
-  <footer>GlassTime</footer>
+  <footer>GlassTime · <a href="./" data-i18n="nav.support">Support</a></footer>
 </main>
 </body>
 </html>
